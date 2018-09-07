@@ -96,6 +96,19 @@ I have added the following to my user settings in Visual Studio Code:
 More information can be found here:
 https://github.com/Microsoft/vscode-cpptools/blob/master/Documentation/LanguageServer/c_cpp_properties.json.md
 
+In your folder .vscode you should find the c_cpp_properties.json, add the following: 
+
+```json
+ "includePath": [
+                "${workspaceFolder}/**",
+                "/Volumes/dev/git-pc/mongoose-os/",
+                "/Volumes/dev/git-pc/esp-idf/",
+                "/Volumes/dev/git-pc/mjs/"
+            ]
+```
+
+Now IntelliSense should be able to find your files.
+
 # init.js code
 The JavaScript code does the following
 
@@ -103,7 +116,6 @@ The JavaScript code does the following
 - Configures the button and creates a callback that toggles the LED
 - Override conf0.json with custom config_schema in mos.yml
 - Configure ADC via a call to C code
-
 
 # main.c code
 
