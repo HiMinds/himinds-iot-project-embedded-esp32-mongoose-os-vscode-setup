@@ -38,7 +38,7 @@ time mos build --arch esp32
 time mos build --local --arch esp32
 ```
 
-When you build it locally a directory called /deps is created and source code to all your dependencies are downloaded locally.
+When you build it locally a directory called /deps is created and source code to all your dependencies are downloaded locally. This makes it easier for IntelliSense.
 
 When working with the JavaScript file you can easily copy the file to the target. Enter the fs folder and do the following:
 
