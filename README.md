@@ -101,9 +101,9 @@ In your folder .vscode you should find the c_cpp_properties.json, add the follow
 ```json
  "includePath": [
                 "${workspaceFolder}/**",
-                "/Volumes/dev/git-pc/mongoose-os/",
-                "/Volumes/dev/git-pc/esp-idf/",
-                "/Volumes/dev/git-pc/mjs/"
+                "/your path/git/mongoose-os/",
+                "/your path/git/esp-idf/",
+                "/your path/git/mjs/"
             ]
 ```
 
