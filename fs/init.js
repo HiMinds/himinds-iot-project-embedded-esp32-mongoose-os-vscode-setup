@@ -55,5 +55,5 @@ Timer.set(3000, true, function () {
 // Toogle LED
 GPIO.set_button_handler(ESP32_THING_BUTTON, GPIO.PULL_UP, GPIO.INT_EDGE_NEG, 20, function () {
     print("Toggle LED");
-    GPIO.toggle(led);
+    GPIO.toggle(esp32ThingLED);
 }, null);
